@@ -20,7 +20,7 @@
                  extend: {
                      colors: {
                          'gradient-start': '#FF8938',
-                         'gradient-end': '#F00',
+                         
                      }
                  }
              }
@@ -58,7 +58,7 @@
               <li><a>Contact</a></li>
         </div>
         <div class="navbar-end">
-            <img class="mr-6" src="Frame.svg" alt="">
+            <img class="opacity-0 lg:opacity-100 mr-6 " src="Frame.svg" alt="">
           <a class="btn bg-[#FF4240] text-white">Get Ticket</a>
         </div>
       </div>
@@ -67,35 +67,35 @@
       <section class="mt-14">
         <div class="carousel w-full ">
             <div id="slide1" class="carousel-item relative w-full">
-              <img  src="Images/1.png" class="w-[1170px] mx-auto lg:w-[1170px]" />
+              <img  src="Images/1.png" class="w-[1440px] mx-auto lg:w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide4" class="btn btn-circle">❮</a> 
                 <a href="#slide2" class="btn btn-circle">❯</a>
               </div>
             </div> 
             <div id="slide2" class="carousel-item relative w-full">
-              <img src="" class="w-full" />
+              <img src="Images/2.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" class="btn btn-circle">❮</a> 
                 <a href="#slide3" class="btn btn-circle">❯</a>
               </div>
             </div> 
             <div id="slide3" class="carousel-item relative w-full">
-              <img src="" class="w-full" />
+              <img src="Images/3.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide2" class="btn btn-circle">❮</a> 
                 <a href="#slide4" class="btn btn-circle">❯</a>
               </div>
             </div> 
             <div id="slide4" class="carousel-item relative w-full">
-              <img src="" class="w-full" />
+              <img src="Images/4.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide3" class="btn btn-circle">❮</a> 
                 <a href="#slide1" class="btn btn-circle">❯</a>
               </div>
             </div>
           </div>
-          <div class="rounded-2xl font-manrope p-8 mr-10 mb-8 bg-black absolute bottom-4 right-0 w-[500px] h-[165px]">
+          <div class="rounded-2xl font-manrope p-8 mr-10  bg-black relative lg:absolute lg:bottom-[-90px] lg:right-0 w-full lg:w-[500px] h-[165px]">
             <h4 class="text-2xl font-extrabold text-white">Meet all the heroes from the field</h4>
             <p class="text-lg font-medium text-white">
                 Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis 
@@ -110,7 +110,7 @@
     <hr class="my-[80px] w-full text-[#13131833]">
 
     <!--Redial progress-->
-    <section class="text-center flex justify-center">
+    <section class="text-center flex-col flex lg:flex-row justify-center gap-4">
         <div class="flex flex-col items-center mr-16">
             <div class="radial-progress text-[red]" style="--value:87;" role="progressbar">87%</div>
             <div>
@@ -135,7 +135,7 @@
             </div>
         </div>
     
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center mr-16">
             <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
             <div>
                 <h4 class="">Training Ground</h4>
@@ -154,8 +154,8 @@
     <main>
       <section class="">
         <!-- Programme section -->
-        <div class="grid grid-cols-1 lg:grid-cols-2  gap-4">
-          <div class="relative">
+        <div class="grid grid-cols-1 lg:grid-cols-2 items-center justify-items-center gap-4  ">
+          <div class="relative self-end">
             <img src="Images/2.png" alt="">
             <div class="absolute text-white space-y-1 -translate-y-48 translate-x-8 mb-40">
                 <h1 class=" text-xm lg:text-2xl font-bold mb-1 font-manrope">Teenager Program</h1>
@@ -431,12 +431,15 @@
     </div>
      </section>
 
-     <div class="text-center font-manrope rounded-xl bg-[#13131808] w-full h-[130px]   ">
+     <div class="text-center font-manrope rounded-xl bg-[#13131808] w-full h-[130px] flex justify-center items-center flex-col gap-2  ">
+
       <h1 class="font-extrabold">Social Media</h1>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-github"></i>
+      <div class="">
+      <i class="fa-brands fa-twitter p-2"></i>
+      <i class="fa-brands fa-facebook p-2"></i>
+      <i class="fa-brands fa-instagram p-2"></i>
+      <i class="fa-brands fa-github p-2"></i>
+      </div>
      </div>
     </main>
     <footer class="footer p-10 bg-[#131318] text-neutral-content mt-24">
